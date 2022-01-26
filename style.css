@@ -4,6 +4,7 @@
 }
 
 body {
+  background-color: #121212;
   align-items: center;
   height: 100vh;
   width: 100vw;
@@ -15,10 +16,16 @@ body {
 video {
   object-fit: cover;
   height: 100%;
-  width: 100%;
+  width: max-content;
 }
 
 audio {
   z-index: -1;
   visibility: hidden;
+}
+
+@media only screen and (max-width: 700px) {
+  video {
+    width: 100%;
+  }
 }
